@@ -1,3 +1,4 @@
+const header = document.getElementsByTagName('header');
 const burger = document.getElementById('burger');
 const navbar = document.getElementById('navbar');
 
