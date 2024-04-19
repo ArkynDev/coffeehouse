@@ -1,14 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap");
+@font-face {
+  font-family: "Histora Beralin";
+  src: url("../fonts/Histora Beralin.otf") format("otf");
+}
 header {
   display: flex;
+  align-items: center;
   position: sticky;
   width: 100%;
-  padding: 0.9rem 6%;
+  padding: 1.6rem 6%;
 }
 header #nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
+  font-family: "M PLUS Rounded 1c", Verdana, Geneva, Tahoma, sans-serif;
+}
+header #nav #navbar ul {
+  display: flex;
+  gap: 12px;
 }
 header #nav #logo {
   display: flex;
@@ -21,9 +32,89 @@ header #nav #logo img {
 header #nav #logo span {
   font-size: 1em;
 }
-header #nav #navbar ul {
+
+main {
   display: flex;
+  flex-direction: column;
+}
+main #s1 {
+  display: flex;
+  flex-direction: column;
+}
+main #s1 #s1-top {
+  display: flex;
+  flex: 1;
+}
+main #s1 #s1-top > div {
+  display: flex;
+  width: 50%;
+  height: 100%;
+}
+main #s1 #s1-top #s1-texts {
+  flex-direction: column;
+  justify-content: start;
+  padding: 75px 0px 0px 100px;
+  gap: 24px;
+}
+main #s1 #s1-top #s1-texts h2 {
+  font-size: 2.4em;
+  line-height: 1.4;
+  letter-spacing: 6px;
+}
+main #s1 #s1-top #s1-texts p {
+  font-size: 0.8em;
+}
+main #s1 #s1-top #s1-img-container {
+  align-items: center;
+  justify-content: center;
+}
+main #s1 #s1-top #s1-img-container div {
+  width: 340px;
+  height: 340px;
+  margin-bottom: 75px;
+  background-image: url("../img/coffee01.jpg");
+  background-size: cover;
+  background-position: center;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  border-radius: 40px;
+}
+main #s1 #s1-botton {
+  background-color: #131313;
+  height: 150px;
+}
+main #s1 #s1-card {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #242424;
+  border: 5px solid white;
+  border-radius: 25px;
+  box-shadow: none;
+  padding: 6px 12px;
+  gap: 48px;
+  width: 550px;
+  height: 125px;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+main #s1 #s1-card div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
   gap: 12px;
+}
+main #s1 #s1-card div object {
+  width: 50px;
+}
+main #s1 #s1-card div p {
+  font-size: 0.8em;
+}
+main #s2 {
+  background-color: #131313;
 }
 
 @media screen and (max-width: 768px) {
